@@ -65,7 +65,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 330px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -237,13 +237,75 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (min-width: 768px) {
+
+/* Width at 980px and below */
+@media screen and (max-width: 980px) {
   body {
-
+    width: 980px;
   }
-
-  /* The wrapper's width */
-  .wrapper {
-    width: 1024px;
+/*  header {
+    width: 980px;
   }
-}
+  .container {
+    width: 980px;
+  }*/
+
+  /* Width at 768px and below */
+@media screen and (max-width: 768px) {
+  body {
+    width: 768px;
+  }
+  header {
+    width: 640px;
+  }
+  .container {
+    width: 640px;
+  }
+  .main-section {
+    width: 370px;
+  }
+  .sidebar {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .auth-image {
+    
+  }
+  /* Width at 640px and below */
+@media screen and (max-width: 640px) {
+  header {
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+  body {
+    width: 640px;
+  }
+  #masthead {
+    width: 100%;
+  }
+  #logo {
+    padding: 0px;
+    width: 640px;
+  }
+  nav {
+    width: 640px;
+    line-height: 3;
+    margin-top: 0;
+  }
+  nav a {
+    padding-left: 60px;
+    margin-left: 60px;
+  }
+  .main-section {
+    width: 600px;
+    margin: 20px;
+  }
+  .sidebar {
+    width: 600px;
+    float: left;
+    margin: 0px 0px 20px 20px;
+    max-width: 100%;
+  }
+  .auth-image {
+    width: 538px;
+  }
