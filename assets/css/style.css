@@ -243,14 +243,24 @@ input[type=submit] {
   body {
     width: 980px;
   }
-/*  header {
-    width: 980px;
+  #masthead {
+    padding: 0 100px;
   }
-  .container {
-    width: 980px;
-  }*/
+  #main-container {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+  .main-section {
+    max-width: 470px;
+  }
+  .sidebar {
+    float: right;
+  }
+  .auth-image {
+    width: 410px;
+  }
 
-  /* Width at 768px and below */
+/* Width at 768px and below */
 @media screen and (max-width: 768px) {
   body {
     width: 768px;
@@ -273,7 +283,7 @@ input[type=submit] {
     width: 334px;
   }
 
-  /* Width at 640px and below */
+/* Width at 640px and below */
 @media screen and (max-width: 640px) {
   body {
     width: 640px;
