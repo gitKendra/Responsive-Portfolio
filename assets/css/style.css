@@ -247,7 +247,7 @@ input[type=submit] {
     padding: 0 10%;
   }
   nav {
-    padding-right: 15%;
+    padding-right: 180px;
   }
   #main-container {
     padding: 130px 10% 20px 10%;
@@ -259,6 +259,9 @@ input[type=submit] {
     float: right;
   }
   .auth-image {
+    width: 100%;
+  }
+  .work {
     width: 100%;
   }
 
@@ -284,6 +287,9 @@ input[type=submit] {
   }
   .auth-image {
     width: 50%;
+  }
+  .work {
+    width: 46.9%;
   }
 
 /* Width at 640px and below */
@@ -324,4 +330,7 @@ input[type=submit] {
   .auth-image {
     width: 100%;
     margin: 0px;
+  }
+  .work {
+    width: 100%;
   }
