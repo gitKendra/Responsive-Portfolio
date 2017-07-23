@@ -240,18 +240,17 @@ input[type=submit] {
 
 /* Width at 980px and below */
 @media screen and (max-width: 980px) {
-  body {
+  .container {
     width: 980px;
   }
   #masthead {
-    padding: 0 100px;
+
   }
   #main-container {
-    padding-right: 90px;
-    padding-left: 90px;
+
   }
   .main-section {
-    max-width: 470px;
+    max-width: 100%;
   }
   .sidebar {
     float: right;
@@ -262,62 +261,64 @@ input[type=submit] {
 
 /* Width at 768px and below */
 @media screen and (max-width: 768px) {
-  body {
+  .container {
     width: 768px;
   }
   #masthead {
-    padding: 0 20px;
+    padding: 0px 20px;
+  }
+  nav {
+    margin-right: 45px;
   }
   #main-container {
-    max-width: 728px;
-    padding-top: 115px;
+    padding: 130px 20px 20px 20px;
   }
   .main-section {
     max-width: 100%;
   }
   .sidebar {
-    float: left;
     max-width: 100%;
   }
   .auth-image {
-    width: 334px;
+    width: 50%;
   }
 
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
-  body {
+  .container {
     width: 640px;
   }
   #masthead {
+    position: static;
+    margin: 0px;
     padding: 0px;
   }
   #logo {
     padding: 0px;
-    width: 640px;
+    width: 100%;
   }
   nav {
-    width: 640px;
+    width: 100%;
     line-height: 3;
     margin-top: 0;
+    margin-right: 0;
   }
   nav a {
-    padding-left: 60px;
-    margin-left: 60px;
+    padding-left: 56px;
+    margin-right: 78px;
   }
   #main-container {
-    margin-bottom: 20px;
-    padding-top: 146px;
+    padding: 20px;
   }
   .main-section {
-    width: 600px;
-    margin: 20px;
+    max-width: 100%
+    width: 100%;
   }
   .sidebar {
-    float: left;
-    width: 600px;
-    margin: 0px 0px 20px 20px;
+    width: 100%;
     max-width: 100%;
   }
   .auth-image {
-    width: 538px;
+    width: 100%;
+    margin: 0px;
   }
