@@ -244,10 +244,10 @@ input[type=submit] {
     width: 980px;
   }
   #masthead {
-    padding: 0 10%;
+    padding: 0 96px;
   }
   nav {
-    padding-right: 180px;
+    padding-right: 200px;
   }
   #main-container {
     padding: 130px 10% 20px 10%;
