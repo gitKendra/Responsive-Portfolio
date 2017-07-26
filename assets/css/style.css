@@ -54,7 +54,6 @@ h3 {
 
 #masthead {
   position: fixed;
-  z-index: 99;
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
@@ -65,7 +64,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 330px;
+  width: 320px;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -78,6 +77,8 @@ h3 {
 }
 
 nav {
+  position: static;
+  width: 278px;
   float: right;
   margin-top: 25px;
 }
@@ -149,6 +150,7 @@ h3,
   float: left;
   width: 100%;
   max-width: 650px;
+  padding: 5%;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -241,22 +243,21 @@ input[type=submit] {
 /* Width at 980px and below */
 @media screen and (max-width: 980px) {
   .container {
-    width: 980px;
+    min-width: 768px;
   }
   #masthead {
-    padding: 0 96px;
+    padding: 0 5%;
   }
   nav {
-    padding-right: 200px;
+    position: absolute;
+    right: 5%;
+    margin-right: 10px;
   }
   #main-container {
-    padding: 130px 10% 20px 10%;
+    padding: 130px 5% 20px 5%;
   }
   .main-section {
     max-width: 60%;
-  }
-  .sidebar {
-    float: right;
   }
   .auth-image {
     width: 100%;
@@ -268,13 +269,14 @@ input[type=submit] {
 /* Width at 768px and below */
 @media screen and (max-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 640px;
   }
   #masthead {
     padding: 0px 20px;
   }
   nav {
-    padding-right: 45px;
+    margin-right: 10px;
+    right: 10px;
   }
   #main-container {
     padding: 130px 20px 20px 20px;
@@ -295,7 +297,7 @@ input[type=submit] {
 /* Width at 640px and below */
 @media screen and (max-width: 640px) {
   .container {
-    width: 640px;
+    min-width: 480px;
   }
   #masthead {
     position: static;
@@ -307,14 +309,16 @@ input[type=submit] {
     width: 100%;
   }
   nav {
+    position: static;
     width: 100%;
     line-height: 3;
     margin: 0;
     padding: 0;
   }
   nav a {
-    padding-left: 56px;
-    margin-right: 78px;
+    padding-left: 10%;
+    margin-right: 10%;
+    margin-left: 0;
   }
   #main-container {
     padding: 20px;
